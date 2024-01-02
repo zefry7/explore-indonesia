@@ -1,0 +1,15 @@
+@import "../public/font/fonts";
+@import "mixins/adaptive";
+@import "null-style";
+@import "intro/intro";
+
+
+body {
+    min-width: 375px;
+    @include adap(max-width, 1920);
+    margin: 0 auto;
+}
+
+p {
+    @include adap(font-size, 18);
+}
