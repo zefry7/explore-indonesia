@@ -1,0 +1,64 @@
+.map {
+    @include adap(padding-top, 250, 200, 171);
+    @include adap(padding-left, 30);
+    @include adap(padding-right, 30);
+    @include adap(padding-bottom, 250, 183, 116);
+    overflow: hidden;
+    position: relative;
+    &::before {
+        content: "";
+        display: inline-block;
+        @include adap(width, 1390, 1050, 744);
+        @include adap(height, 1700, 1300, 990);
+        position: absolute;     
+        @include adap(top, -832, -832, -800, -770);
+        @include adap(left, -751, -600, -240);
+        z-index: -1;
+        background: url("../public/img/map/decor.png") center/ 100% 100% no-repeat;
+    }
+    &::after {
+        content: "";
+        display: inline-block;
+        @include adap(width, 1390, 1100, 824);
+        @include adap(height, 1700, 1300, 990);
+        position: absolute;
+        @include adap(bottom, -1172, -950, -720);
+        @include adap(right, -611, -450, -374);
+        z-index: -1;
+        background: url("../public/img/map/decor.png") center/ 100% 100% no-repeat;
+    }
+    &__content {
+        margin: 0 auto;
+        @include adap(max-width, 614);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        @include adap(margin-bottom, 35);
+        @include adap(font-size, 42, 40);
+        line-height: 120%;
+        font-family: "DMb";
+        text-align: center;
+    }
+    &__text {
+        @include adap(max-width, 470);
+        @include adap(margin-bottom, 36);
+        @include adap(font-size, 18, 16);
+        line-height: 140%;
+        text-align: center;
+        font-family: "DMn";
+        color: rgb(111, 119, 135);
+    }
+    &__button {
+        @extend .articles__button;
+    }
+}
+
+@media (max-width: 768px) {
+    .map {
+        &::before {
+            transform: rotateZ(40deg);
+        } 
+    }
+}
