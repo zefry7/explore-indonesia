@@ -1,0 +1,95 @@
+.articles {
+    background-color: #010A20;
+}   
+.articles__content {
+
+    & .articles__item:nth-child(1) {
+        background: linear-gradient(0deg,#010A20, rgba(255, 255, 255, 0)), url("../public/img/articles/bg-item-1.webp") center/ cover no-repeat;
+        @include adap(padding-top, 200, 150, 40);
+        @include adap(padding-left, 30);
+        @include adap(padding-right, 30);
+        @include adap(padding-bottom, 100, 70, 28);
+        .articles__info {
+            @include adap(margin-right, 43);
+        }
+    }
+
+    & .articles__item:nth-child(2) {
+        flex-direction: row-reverse;
+        background: linear-gradient(#010A20, rgba(255, 255, 255, 0)), url("../public/img/articles/bg-item-2.webp") center/ cover no-repeat;
+        @include adap(padding-top, 100, 70, 28);
+        @include adap(padding-left, 30);
+        @include adap(padding-right, 30);
+        @include adap(padding-bottom, 200, 150, 40);
+        .articles__info {
+            @include adap(margin-left, 43);
+        }
+    }
+}
+.articles__item { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include adap(gap, 130, 70, 33)
+}
+.articles__img {
+    img {
+        @include adap(width, 630, 630, 630, 315);
+        height: auto;
+    }
+}
+.articles__info {
+    @include adap(width, 490, 490, 315);
+}
+.articles__title {
+    @include adap(margin-bottom, 30, 30, 20);
+    @include adap(font-size, 42, 40);
+    line-height: 120%;
+    font-family: "DMb";
+    color: white;
+}
+.articles__text {
+    @include adap(margin-bottom, 30);
+    @include adap(width, 410, 315);
+    @include adap(font-size, 18, 16);
+    line-height: 140%;
+    font-family: "DMn";
+    color: #E0E0E0;
+}
+.articles__button {
+    @include adap(height, 60);
+    @include adap(width, 180);
+    @include adap(border-radius, 32);
+    @include adap(font-size, 18);
+    text-align: center;
+    font-family: "DMb";
+    background-color: #DD2242;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .articles__item { 
+        flex-direction: column !important;
+
+    }
+    .articles__info {
+        margin: 0 !important;
+        @include adap(max-width, 630);
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .articles__img {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 425px) {
+    .articles__button {
+        width: 100%;
+    }
+}
