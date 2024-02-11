@@ -4,6 +4,7 @@ import "./style.css"
 import Intro from './intro/Intro';
 import Articles from './articles/articles';
 import Map from "./map/map"
+import Gallery from './gallery/gallery';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,6 +12,7 @@ root.render(
     <Intro />
     <Articles /> 
     <Map />
+    <Gallery />
   </React.StrictMode>
 );
 

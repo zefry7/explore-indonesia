@@ -52,6 +52,7 @@
     }
     &__button {
         @extend .articles__button;
+        @include adap(width, 210);
     }
 }
 

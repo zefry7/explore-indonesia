@@ -33,9 +33,10 @@
     @include adap(gap, 130, 70, 33)
 }
 .articles__img {
+    @include adap(max-width, 630);
     img {
-        @include adap(width, 630, 630, 630, 315);
-        height: auto;
+        width: 100%;
+        height: 100%;
     }
 }
 .articles__info {
@@ -76,19 +77,24 @@
         margin: 0 !important;
         @include adap(max-width, 630);
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .articles__text,
+    .articles__title {
+        text-align: center;
     }
 }
 
 @media (max-width: 425px) {
-    .articles__img {
-        img {
-            width: 100%;
-        }
+    .articles__info {
+        align-items: start;
     }
-}
-
-
-@media (max-width: 425px) {
+    .articles__text,
+    .articles__title {
+        text-align: left;
+    }
     .articles__button {
         width: 100%;
     }
