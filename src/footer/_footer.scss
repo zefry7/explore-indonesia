@@ -1,0 +1,76 @@
+.footer {
+    &__content {
+        padding-left: 116px;
+        padding-right: 153px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        background-color: rgb(1, 10, 32);
+    }
+    &__name {
+        margin-right: 124px;
+        width: 124px;
+        font-size: 24px;
+        text-transform: uppercase;
+        font-family: "Roboto";
+        color: white;
+        & span {
+            color: rgb(221, 34, 66);
+        }
+        position: relative;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: -43px;
+            top: -5px;
+            @include adap(min-height, 49, 49, 42, 42);
+            @include adap(min-width, 49, 49, 42, 42);
+            background: url("../public/img/intro/flower.svg") center/ 100% no-repeat;
+        }
+    }
+    &__links {
+        margin-right: auto;
+        display: flex;
+        gap: 36px;
+    }
+    &__link {
+        font-size: 18px;
+        font-family: "DMb";
+        color: white;
+        cursor: pointer;
+    }
+    &__socials {
+        margin-right: 50px;
+        display: flex;
+        gap: 22px;
+    }
+    &__item {
+        height: 24px;
+        width: 24px;
+        cursor: pointer;
+    }
+    &__copyright {
+        font-size: 18px;
+        font-family: "DMb";
+        color: white;
+    }
+    &__button-up {
+        height: 104px;
+        width: 104px;
+        top: -54px;
+        right: 100px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        background-color: rgb(221, 34, 66);
+        cursor: pointer;
+    }
+}
+

@@ -5,6 +5,8 @@ import Intro from './intro/Intro';
 import Articles from './articles/articles';
 import Map from "./map/map"
 import Gallery from './gallery/gallery';
+import Footer from './footer/footer';
+import Video from './video/video';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +14,9 @@ root.render(
     <Intro />
     <Articles /> 
     <Map />
+    <Video />
     <Gallery />
+    {/* <Footer /> */}
   </React.StrictMode>
 );
 
