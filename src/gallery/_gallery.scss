@@ -1,6 +1,6 @@
 .gallery {
     &__content {
-        @include adap(padding-top, 175, 100, 30);
+        @include adap(padding-top, 175, 100, 50);
         @include adap(padding-left, 30);
         @include adap(padding-right, 30);
         @include adap(padding-bottom, 230, 135, 40);

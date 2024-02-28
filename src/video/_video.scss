@@ -2,8 +2,8 @@
     position: relative;
     &__content {
         @include adap(padding-top, 140, 110, 80);
-        @include adap(padding-left, 100, 70, 30);
-        @include adap(padding-right, 100, 70, 30);
+        @include adap(padding-left, 100, 30);
+        @include adap(padding-right, 100, 30);
         @include adap(padding-bottom, 255, 140, 40);
         display: flex;
         flex-direction: column;

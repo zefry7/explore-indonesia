@@ -1,0 +1,147 @@
+.road {
+    background: #DCE8F2;
+    &__content {
+        @include adap(padding-top, 120, 75, 75, 50);
+        @include adap(padding-left, 30);
+        @include adap(padding-right, 30);
+        @include adap(padding-bottom, 120, 75, 75, 30);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        @include adap(max-width, 1162);
+        @include adap(margin-bottom, 60, 60, 94);
+        @include adap(font-size, 60, 50, 40);
+        font-family: "DMb";
+    }
+    &__points {
+        @include adap(max-width, 1162);
+        @include adap(padding-left, 100, 80);
+
+        & .road__item:first-child {
+            &::before {
+                content: "1";
+            }
+        }
+
+        & .road__item:nth-child(2) {
+            &::before {
+                content: "2";
+            }
+        }
+
+        & .road__item:nth-child(3) {
+            @include adap(margin-bottom, 17);
+            &::before {
+                content: "3";
+            }
+        }
+    }
+    &__item {
+        @include adap(margin-bottom, 94);
+        position: relative;
+        &::before {
+            position: absolute;
+            @include adap(left, -100, -80);
+            @include adap(top, -15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include adap(height, 60);
+            @include adap(width, 60);
+            @include adap(font-size, 26);
+            border-radius: 100%;
+            font-family: "DMn";
+            background-color: rgb(221, 34, 66);
+            color: white;
+        }
+        &-title {
+            @include adap(margin-bottom, 20, 16, 13);
+            @include adap(font-size, 26, 24, 22);
+            line-height: 140%;
+            font-family: "DMb";
+        }
+        &-text {
+            @include adap(font-size, 24, 20, 16);
+            line-height: 160%;
+            color: rgba(21, 20, 57, 0.4);
+        }
+        &-block-video {
+            @include adap(margin-top, 94, 60, 32);
+            @include adap(gap, 45, 45, 30);
+            display: flex;
+        }
+        &-video {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            @include adap(max-width, 250);
+            width: 100%;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: inline-block;
+                @include adap(height, 25);
+                @include adap(width, 25);
+                background: url("../public/img/road/play.png") center/100% no-repeat;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-block-text {
+            @include adap(max-width, 460, 460, 340);
+        }
+    }
+    &__button {
+        @extend .map__button;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .road {
+        &__points {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 0;
+        }
+        &__item {
+            &::before {
+                @include adap(top, -75);
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &-title {
+                text-align: center;
+            }
+
+            &-text {
+                text-align: center;
+            }
+
+            &-block-video {
+                flex-direction: column;
+                align-items: center;
+            }
+            &-video {
+                @include adap(max-width, 315);
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            &-block-text {
+                max-width: 100%;
+            }
+        }
+    }
+}
