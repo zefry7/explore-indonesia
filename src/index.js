@@ -8,17 +8,19 @@ import Gallery from './gallery/gallery';
 import Footer from './footer/footer';
 import Video from './video/video';
 import Road from './road/road';
+import Secret from './secret/secret';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Intro />
     <Articles /> 
+    <Secret />
     <Map />
     <Video />
     <Gallery />
     <Road />
-    {/* <Footer /> */}
+    <Footer />
   </React.StrictMode>
 );
 

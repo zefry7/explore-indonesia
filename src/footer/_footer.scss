@@ -1,9 +1,9 @@
 .footer {
     &__content {
-        padding-left: 116px;
-        padding-right: 153px;
-        padding-top: 40px;
-        padding-bottom: 30px;
+        @include adap(padding-left, 116, 60, 40, 30);
+        @include adap(padding-right, 153, 70, 40, 30);
+        @include adap(padding-top, 40, 40, 60, 120);
+        @include adap(padding-bottom, 30, 30, 30, 75);
         width: 100%;
         position: relative;
         display: flex;
@@ -11,9 +11,9 @@
         background-color: rgb(1, 10, 32);
     }
     &__name {
-        margin-right: 124px;
-        width: 124px;
-        font-size: 24px;
+        @include adap(margin-right, 124, 60, 15);
+        @include adap(width, 124);
+        @include adap(font-size, 24);
         text-transform: uppercase;
         font-family: "Roboto";
         color: white;
@@ -26,44 +26,50 @@
             content: "";
             display: inline-block;
             position: absolute;
-            left: -43px;
-            top: -5px;
-            @include adap(min-height, 49, 49, 42, 42);
-            @include adap(min-width, 49, 49, 42, 42);
+            @include adap(left, -45);
+            @include adap(top, -5, -3);
+            @include adap(min-height, 51);
+            @include adap(min-width, 51);
             background: url("../public/img/intro/flower.svg") center/ 100% no-repeat;
         }
     }
     &__links {
         margin-right: auto;
         display: flex;
-        gap: 36px;
+        @include adap(gap, 36, 20, 15, 36);
     }
     &__link {
-        font-size: 18px;
+        @include adap(font-size, 18, 18, 18, 23);
         font-family: "DMb";
+        line-height: 160%;
         color: white;
         cursor: pointer;
     }
     &__socials {
-        margin-right: 50px;
+        @include adap(margin-right, 50, 10);
         display: flex;
-        gap: 22px;
+        @include adap(gap, 22, 10, 10, 48);
     }
     &__item {
-        height: 24px;
-        width: 24px;
+        @include adap(height, 24, 24, 27, 31);
+        @include adap(width, 24, 24, 27, 31);
+        img {
+            width: 100%;
+            height: 100%;
+        }
         cursor: pointer;
     }
     &__copyright {
-        font-size: 18px;
+        @include adap(font-size, 18, 18, 18, 24);
+        line-height: 160%;
         font-family: "DMb";
         color: white;
     }
     &__button-up {
-        height: 104px;
-        width: 104px;
-        top: -54px;
-        right: 100px;
+        @include adap(height, 104);
+        @include adap(width, 104);
+        @include adap(top, -54, -54, -54, -41);
+        @include adap(right, 100);
         position: absolute;
         display: flex;
         align-items: center;
@@ -74,3 +80,29 @@
     }
 }
 
+@media (max-width: 768px) {
+    .footer {
+        &__content {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__name {
+            @include adap(margin-right, -40);
+            @include adap(margin-bottom, 36);
+        }
+        &__links {
+            @include adap(margin-bottom, 36);
+            margin-right: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__socials {
+            margin-right: 0;
+            @include adap(margin-bottom, 36);
+        }
+        &__button-up {
+            right: 50%;
+            transform: translateX(50%);
+        }
+    }
+}
