@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/explore-indonesia/static/css/main.4caa71da.css",
-    "main.js": "/explore-indonesia/static/js/main.42985ead.js",
+    "main.css": "/explore-indonesia/static/css/main.39747d9a.css",
+    "main.js": "/explore-indonesia/static/js/main.28cb84d5.js",
+    "static/media/bg.png": "/explore-indonesia/static/media/bg.8fbd307ad759fd73e310.png",
     "static/media/video-main.png": "/explore-indonesia/static/media/video-main.23744d892f9995638810.png",
     "static/media/bg-item-2.webp": "/explore-indonesia/static/media/bg-item-2.6f0dfd32504877b2a1f5.webp",
     "static/media/bg-item-1.webp": "/explore-indonesia/static/media/bg-item-1.f24161267cadf24390b3.webp",
@@ -41,11 +42,11 @@
     "static/media/social-facebook.svg": "/explore-indonesia/static/media/social-facebook.eaeddc0b903d7b084f7a81e6a48faa1d.svg",
     "index.html": "/explore-indonesia/index.html",
     "static/media/play.svg": "/explore-indonesia/static/media/play.5153afe4dedaafa06d0c8282ffec5d30.svg",
-    "main.4caa71da.css.map": "/explore-indonesia/static/css/main.4caa71da.css.map",
-    "main.42985ead.js.map": "/explore-indonesia/static/js/main.42985ead.js.map"
+    "main.39747d9a.css.map": "/explore-indonesia/static/css/main.39747d9a.css.map",
+    "main.28cb84d5.js.map": "/explore-indonesia/static/js/main.28cb84d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.4caa71da.css",
-    "static/js/main.42985ead.js"
+    "static/css/main.39747d9a.css",
+    "static/js/main.28cb84d5.js"
   ]
 }
