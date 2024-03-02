@@ -1,12 +1,15 @@
 {
   "files": {
-    "main.css": "/explore-indonesia/static/css/main.39747d9a.css",
-    "main.js": "/explore-indonesia/static/js/main.28cb84d5.js",
+    "main.css": "/explore-indonesia/static/css/main.0b07bbb7.css",
+    "main.js": "/explore-indonesia/static/js/main.98620ad3.js",
     "static/media/bg.png": "/explore-indonesia/static/media/bg.8fbd307ad759fd73e310.png",
     "static/media/video-main.png": "/explore-indonesia/static/media/video-main.23744d892f9995638810.png",
+    "static/media/item3.png": "/explore-indonesia/static/media/item3.d420e9ab90b2d75a0bc1.png",
+    "static/media/item2.png": "/explore-indonesia/static/media/item2.717053acfaa01c4e98cc.png",
     "static/media/bg-item-2.webp": "/explore-indonesia/static/media/bg-item-2.6f0dfd32504877b2a1f5.webp",
     "static/media/bg-item-1.webp": "/explore-indonesia/static/media/bg-item-1.f24161267cadf24390b3.webp",
     "static/media/bg-video.webp": "/explore-indonesia/static/media/bg-video.14c05cd3fe496b5e0713.webp",
+    "static/media/item1.png": "/explore-indonesia/static/media/item1.d4ba67955d73e852a1e9.png",
     "static/media/decor.png": "/explore-indonesia/static/media/decor.518a57438b1885bead3b.png",
     "static/media/video-2-m.png": "/explore-indonesia/static/media/video-2-m.573b2cbd37f94f7cacd8.png",
     "static/media/item-1.png": "/explore-indonesia/static/media/item-1.6f0fc7e5158c46524796.png",
@@ -38,15 +41,17 @@
     "static/media/menu.svg": "/explore-indonesia/static/media/menu.51aac5b170c62355f8df05b4801f4f34.svg",
     "static/media/search.svg": "/explore-indonesia/static/media/search.866a785e4e63d2bfa4f1f02530229476.svg",
     "static/media/social-linkedin.svg": "/explore-indonesia/static/media/social-linkedin.7581f5c7eabca1852730c1106dd50bc9.svg",
+    "static/media/arrow-prev.svg": "/explore-indonesia/static/media/arrow-prev.b19dcc4adaf6e1e311f56555461cb27f.svg",
     "static/media/arrow-up.svg": "/explore-indonesia/static/media/arrow-up.682e284213787b37c3d19f9747a3220e.svg",
+    "static/media/arrow-next.svg": "/explore-indonesia/static/media/arrow-next.059133dde313198e23bf5848cf276224.svg",
     "static/media/social-facebook.svg": "/explore-indonesia/static/media/social-facebook.eaeddc0b903d7b084f7a81e6a48faa1d.svg",
     "index.html": "/explore-indonesia/index.html",
     "static/media/play.svg": "/explore-indonesia/static/media/play.5153afe4dedaafa06d0c8282ffec5d30.svg",
-    "main.39747d9a.css.map": "/explore-indonesia/static/css/main.39747d9a.css.map",
-    "main.28cb84d5.js.map": "/explore-indonesia/static/js/main.28cb84d5.js.map"
+    "main.0b07bbb7.css.map": "/explore-indonesia/static/css/main.0b07bbb7.css.map",
+    "main.98620ad3.js.map": "/explore-indonesia/static/js/main.98620ad3.js.map"
   },
   "entrypoints": [
-    "static/css/main.39747d9a.css",
-    "static/js/main.28cb84d5.js"
+    "static/css/main.0b07bbb7.css",
+    "static/js/main.98620ad3.js"
   ]
 }
