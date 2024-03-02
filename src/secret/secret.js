@@ -42,10 +42,10 @@ function Secret() {
                         slidesPerView={1}
                         spaceBetween={0}
                         initialSlide={1}
-                        autoplay={{
-                            delay: 2500,
-                            disableOnInteraction: false,
-                        }}
+                        // autoplay={{
+                        //     delay: 2500,
+                        //     disableOnInteraction: false,
+                        // }}
                         pagination= {{
                             el: '.secret__top-pagination',
                             type: 'bullets',
@@ -54,13 +54,8 @@ function Secret() {
                         breakpoints={{
                             425: {
                                 slidesPerView: 3,
-                                spaceBetween: 31
-                            },
-                            2560: {
-                                slidesPerView: 3,
-                                spaceBetween: 42
+                                // spaceBetween: 31
                             }
-
                         }}
                         loop={true}
                         navigation={{
