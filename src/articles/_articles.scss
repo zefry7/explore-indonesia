@@ -2,7 +2,6 @@
     background-color: #010A20;
 }   
 .articles__content {
-
     & .articles__item:nth-child(1) {
         background: linear-gradient(0deg,#010A20, rgba(255, 255, 255, 0)), url("../public/img/articles/bg-item-1.webp") center/ cover no-repeat;
         @include adap(padding-top, 200, 150, 40);
@@ -13,7 +12,6 @@
             @include adap(margin-right, 43);
         }
     }
-
     & .articles__item:nth-child(2) {
         flex-direction: row-reverse;
         background: linear-gradient(#010A20, rgba(255, 255, 255, 0)), url("../public/img/articles/bg-item-2.webp") center/ cover no-repeat;

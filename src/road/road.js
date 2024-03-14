@@ -1,4 +1,4 @@
-import v from "./img/video.png"
+import v from "./img/video.webp"
 
 function Road() {
     const content = [
@@ -20,28 +20,28 @@ function Road() {
         }
     ]
 
-    return <section class="road">
-        <div class="road__content">
-            <h2 class="road__title">Getting there</h2>
-            <div class="road__points">
+    return <section className="road" id="road">
+        <div className="road__content">
+            <h2 className="road__title">Getting there</h2>
+            <div className="road__points">
                 {content.map((value, index) => (
-                    <div class="road__item">
-                        <h4 class="road__item-title">{value.title}</h4>
-                        <p class="road__item-text">{value.text}</p>
+                    <div className="road__item" key={index}>
+                        <h3 className="road__item-title">{value.title}</h3>
+                        <p className="road__item-text">{value.text}</p>
                         {index == 1 &&
-                            <div class="road__item-block-video">
-                                <div class="road__item-video">
+                            <div className="road__item-block-video">
+                                <div className="road__item-video">
                                     <img src={value.video} alt={value.alt} />
                                 </div>
-                                <div class="road__item-block-text">
-                                    <h4 class="road__item-title">{value.title_v}</h4>
-                                    <p class="road__item-text">{value.text_v}</p>
+                                <div className="road__item-block-text">
+                                    <h3 className="road__item-title">{value.title_v}</h3>
+                                    <p className="road__item-text">{value.text_v}</p>
                                 </div>
                             </div>
                         }
                     </div>
                 ))}
-                <button class="road__button">Learn More</button>
+                <button className="road__button">Learn More</button>
             </div>
         </div>
     </section>

@@ -7,27 +7,36 @@ function Footer() {
     const socials = [soc1, soc2, soc3];
     const links = ["About", "Pricing", "Company", "Blog"];
 
-    return <footer class="footer">
-        <div class="footer__content">
-            <p class="footer__name">
+    const buttonUp = () => {
+        const move = (-1) * window.scrollY;
+
+        window.scrollBy({
+            behavior: "smooth",
+            top: move
+        })
+    }
+
+    return <footer className="footer">
+        <div className="footer__content">
+            <p className="footer__name">
                 <span>Explore</span><br/>
                 Indonesia
             </p>
-            <ul class="footer__links">
-                {links.map(value => (
-                    <li class="footer__link">{value}</li>
+            <ul className="footer__links">
+                {links.map((value, index) => (
+                    <li className="footer__link" key={index}>{value}</li>
                 ))}
             </ul>
-            <ul class="footer__socials">
-                {socials.map(value => (
-                    <li class="footer__item">
-                        <img src={value} alt="" />
+            <ul className="footer__socials">
+                {socials.map((value, index) => (
+                    <li className="footer__item" key={index}>
+                        <img src={value} alt="Социальная сеть" />
                     </li>
                 ))}
             </ul>
-            <p class="footer__copyright">Copyright © 2019</p>
-            <div class="footer__button-up">
-                <img src={arrow} alt="" />
+            <p className="footer__copyright">Copyright © 2019</p>
+            <div className="footer__button-up" onClick={() => buttonUp()}>
+                <img src={arrow} alt="Кнопка наверх" />
             </div>
         </div>
     </footer>

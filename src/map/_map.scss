@@ -14,7 +14,7 @@
         @include adap(top, -832, -832, -800, -770);
         @include adap(left, -751, -600, -240);
         z-index: -1;
-        background: url("../public/img/map/decor.png") center/ 100% 100% no-repeat;
+        background: url("../public/img/map/decor.webp") center/ 100% 100% no-repeat;
     }
     &::after {
         content: "";
@@ -25,7 +25,7 @@
         @include adap(bottom, -1172, -950, -720);
         @include adap(right, -611, -450, -374);
         z-index: -1;
-        background: url("../public/img/map/decor.png") center/ 100% 100% no-repeat;
+        background: url("../public/img/map/decor.webp") center/ 100% 100% no-repeat;
     }
     &__content {
         margin: 0 auto;

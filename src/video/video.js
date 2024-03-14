@@ -1,6 +1,6 @@
-import v1 from "./img/video-1-m.png"
-import v2 from "./img/video-2-m.png"
-import vm from "./img/video-main.png"
+import v1 from "./img/video-1-m.webp"
+import v2 from "./img/video-2-m.webp"
+import vm from "./img/video-main.webp"
 import bg from "./img/bg-video.webp"
 
 function Video() {
@@ -16,26 +16,26 @@ function Video() {
         descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in."
     }]
 
-    return <section class="video">
-        <div class="video__bg">
+    return <section className="video" id="video">
+        <div className="video__bg">
             <img src={bg} alt="Фон" />
         </div>
-        <div class="video__content">
-            <div class="video__main">
-                <h2 class="video__main-title">Live a life like you wouldn’t imagine, experience a life you wouldn’t expect.</h2>
-                <div class="video__main-img">
+        <div className="video__content">
+            <div className="video__main">
+                <h2 className="video__main-title">Live a life like you wouldn’t imagine, experience a life you wouldn’t expect.</h2>
+                <div className="video__main-img">
                     <img src={vm} alt="Основное видео" />
                 </div>
             </div>
-            <div class="video__row">
-                {items.map(value => (
-                    <div class="video__item">
-                        <div class="video__item-img">
+            <div className="video__row">
+                {items.map((value, index) => (
+                    <div className="video__item" key={index}>
+                        <div className="video__item-img">
                             <img src={value.img} alt={value.alt} />
                         </div>
-                        <div class="video__item-text">
-                            <h4 class="video__item-title">{value.title}</h4>
-                            <p class="video__item-descr">{value.descr}</p>
+                        <div className="video__item-text">
+                            <h3 className="video__item-title">{value.title}</h3>
+                            <p className="video__item-descr">{value.descr}</p>
                         </div>
                     </div>
                 ))}

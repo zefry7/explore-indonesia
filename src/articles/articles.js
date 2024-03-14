@@ -7,17 +7,17 @@ function Articles() {
     const textBt = "Learn More";
     const imgContent = [it1, it2]
 
-    return (<section class="articles">
-        <div class="articles__content">
+    return (<section className="articles" id="articles">
+        <div className="articles__content">
             {titles.map((value, index) => (
-                <div class="articles__item">
-                    <div class="articles__img">
-                        <img src={imgContent[index]} alt="" />
+                <div className="articles__item" key={index}>
+                    <div className="articles__img">
+                        <img src={imgContent[index]} alt="Природа" />
                     </div>
-                    <div class="articles__info">
-                        <h3 class="articles__title">{value}</h3>
-                        <p class="articles__text">{subText}</p>
-                        <button class="articles__button">{textBt}</button>
+                    <div className="articles__info">
+                        <h3 className="articles__title">{value}</h3>
+                        <p className="articles__text">{subText}</p>
+                        <button className="articles__button">{textBt}</button>
                     </div>
                 </div>
             ))}

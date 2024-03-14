@@ -16,6 +16,10 @@ body {
     margin: 0 auto;
 }
 
+.block-scroll {
+    overflow: hidden;
+}
+
 p {
     @include adap(font-size, 18);
     font-family: "DMn";
