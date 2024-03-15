@@ -62,7 +62,7 @@ function Intro() {
     return (
         <section className="intro">
             <header className="header">
-                <p className="header__logo">Explore<br /> Indonesia</p>
+                <p className="header__logo"><a href="/">Explore<br /> Indonesia</a></p>
                 <nav className="header__links">
                     <p className="header__link" data-move="#articles" onClick={event => clickLink(event)}>destinations</p>
                     <p className="header__link" data-move="#video" onClick={event => clickLink(event)}>experiences</p>
@@ -92,7 +92,7 @@ function Intro() {
                         <img src={bg} alt="Фоновая картинка" />
                     </div>
                     <h2 className="intro__title">explore<br /> indonesia</h2>
-                    <button className="intro__button">Start travelling</button>
+                    <button className="intro__button button-anim">Start travelling</button>
                 </div>
                 <div className="intro__row-bottom">
                     <div className="intro__items">

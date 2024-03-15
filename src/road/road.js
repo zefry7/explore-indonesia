@@ -41,7 +41,7 @@ function Road() {
                         }
                     </div>
                 ))}
-                <button className="road__button">Learn More</button>
+                <button className="road__button button-anim">Learn More</button>
             </div>
         </div>
     </section>

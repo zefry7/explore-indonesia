@@ -44,6 +44,12 @@
         line-height: 160%;
         color: white;
         cursor: pointer;
+        &:hover {
+            outline: solid rgba(255, 255, 255, 0.308);
+            @include adap(outline-width, 12);
+            @include adap(border-radius, 7);
+            background-color: rgba(255, 255, 255, 0.308);
+        }
     }
     &__socials {
         @include adap(margin-right, 50, 10);

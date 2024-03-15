@@ -17,7 +17,7 @@ function Articles() {
                     <div className="articles__info">
                         <h3 className="articles__title">{value}</h3>
                         <p className="articles__text">{subText}</p>
-                        <button className="articles__button">{textBt}</button>
+                        <button className="articles__button button-anim">{textBt}</button>
                     </div>
                 </div>
             ))}

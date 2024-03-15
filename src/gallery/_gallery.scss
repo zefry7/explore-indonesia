@@ -38,6 +38,12 @@
         img {
             width: 100%;
             height: 100%;
+            transition: all 0.1s linear;
+            cursor: pointer;
+            &:hover {
+                transition: all 0.1s linear;
+                transform: scale(0.95);
+            }
         }
     }
 }

@@ -24,3 +24,22 @@ p {
     @include adap(font-size, 18);
     font-family: "DMn";
 }
+
+.button-anim {
+    margin-bottom: 5px;
+    transition: all linear 0.1s;
+    &:hover {
+        transition: all linear 0.1s;
+        color: rgb(214, 214, 214);
+        background-color: #b61c36;
+        box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+    }
+    &:active {
+        transition: all linear 0.1s;
+        @include adap(margin-bottom, 0);
+        @include adap(margin-top, 5);
+        color: rgb(192, 192, 192);
+        background-color: #791223;
+        box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+    }
+}

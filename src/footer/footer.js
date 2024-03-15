@@ -35,7 +35,7 @@ function Footer() {
                 ))}
             </ul>
             <p className="footer__copyright">Copyright © 2019</p>
-            <div className="footer__button-up" onClick={() => buttonUp()}>
+            <div className="footer__button-up button-anim" onClick={() => buttonUp()}>
                 <img src={arrow} alt="Кнопка наверх" />
             </div>
         </div>

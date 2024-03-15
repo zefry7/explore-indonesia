@@ -49,6 +49,7 @@ function Secret() {
                         pagination= {{
                             el: '.secret__top-pagination',
                             type: 'bullets',
+                            clickable: true
                         }}
                         centeredSlides={true}
                         breakpoints={{

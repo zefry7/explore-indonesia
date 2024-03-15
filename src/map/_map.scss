@@ -15,6 +15,7 @@
         @include adap(left, -751, -600, -240);
         z-index: -1;
         background: url("../public/img/map/decor.webp") center/ 100% 100% no-repeat;
+        animation: rotate 8s linear 0s infinite;
     }
     &::after {
         content: "";
@@ -26,6 +27,19 @@
         @include adap(right, -611, -450, -374);
         z-index: -1;
         background: url("../public/img/map/decor.webp") center/ 100% 100% no-repeat;
+        animation: rotate 8s linear 4s infinite;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: translateX(0px) translateY(0px);
+        }
+        50% {
+            transform: translateX(-10px) translateY(20px);
+        }
+        100% {
+            transform: translateX(0px) translateY(0px);
+        }
     }
     &__content {
         margin: 0 auto;
