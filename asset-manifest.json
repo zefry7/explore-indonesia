@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/explore-indonesia/static/css/main.2349ee97.css",
+    "main.css": "/explore-indonesia/static/css/main.9c8b51b6.css",
     "main.js": "/explore-indonesia/static/js/main.8a823a86.js",
     "static/media/bg.webp": "/explore-indonesia/static/media/bg.c1e00ba4a3ff8ab2f0d0.webp",
     "static/media/bg-item-2.webp": "/explore-indonesia/static/media/bg-item-2.6f0dfd32504877b2a1f5.webp",
@@ -46,11 +46,11 @@
     "index.html": "/explore-indonesia/index.html",
     "static/media/play.svg": "/explore-indonesia/static/media/play.5153afe4dedaafa06d0c8282ffec5d30.svg",
     "static/media/play.webp": "/explore-indonesia/static/media/play.07fa5a50961c5ab6a201.webp",
-    "main.2349ee97.css.map": "/explore-indonesia/static/css/main.2349ee97.css.map",
+    "main.9c8b51b6.css.map": "/explore-indonesia/static/css/main.9c8b51b6.css.map",
     "main.8a823a86.js.map": "/explore-indonesia/static/js/main.8a823a86.js.map"
   },
   "entrypoints": [
-    "static/css/main.2349ee97.css",
+    "static/css/main.9c8b51b6.css",
     "static/js/main.8a823a86.js"
   ]
 }
